@@ -11,6 +11,11 @@ export class LivroComponent {
   livro: Livro = {
     titulo: 'Espumas Flutuantes',
     autor: 'Castro Alves',
-    imagem: 'https://tse4.mm.bing.net/th/id/OIP.N52TTdT_AjGsvgL_4YDCSQHaLi?rs=1&pid=ImgDetMain&o=7&rm=3'
+    imagem: 'https://tse4.mm.bing.net/th/id/OIP.N52TTdT_AjGsvgL_4YDCSQHaLi?rs=1&pid=ImgDetMain&o=7&rm=3',
+    favorito: false,
   };
+
+  toggleFavorite(){
+    this.livro.favorito = !this.livro.favorito;
+  }
 }
