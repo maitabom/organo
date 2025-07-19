@@ -8,14 +8,10 @@ import { Livro } from '../../models/livros';
   styleUrl: './livro.component.css',
 })
 export class LivroComponent {
-  livroSignal = input.required<Livro>();
-  livro: Livro;
-
-  constructor() {
-    this.livro = this.livroSignal();
-  }
+  livro = input.required<Livro>();
+  protected entity: Livro = this.livro();
 
   toggleFavorite(){
-    this.livro.favorito = !this.livro.favorito;
+    this.entity.favorito = !this.entity.favorito;
   }
 }
