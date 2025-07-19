@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { Livro } from '../../models/livros';
 
 @Component({
@@ -8,17 +8,12 @@ import { Livro } from '../../models/livros';
   styleUrl: './livro.component.css',
 })
 export class LivroComponent {
-  livro: Livro = {
-    titulo: 'Espumas Flutuantes',
-    autor: 'Castro Alves',
-    genero: {
-      id: 'poesia',
-      value: 'Poesia',
-      livros: [],
-    },
-    imagem: 'https://tse4.mm.bing.net/th/id/OIP.N52TTdT_AjGsvgL_4YDCSQHaLi?rs=1&pid=ImgDetMain&o=7&rm=3',
-    favorito: false,
-  };
+  livroSignal = input.required<Livro>();
+  livro: Livro;
+
+  constructor() {
+    this.livro = this.livroSignal();
+  }
 
   toggleFavorite(){
     this.livro.favorito = !this.livro.favorito;
