@@ -12,7 +12,7 @@ import { Genero } from '../../models/generos';
 })
 export class GeneroLiterarioComponent {
   genero = input.required<Genero>();
-  livro: Livro = livros[0];
+
 
 
 }
