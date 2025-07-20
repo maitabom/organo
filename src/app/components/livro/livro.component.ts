@@ -9,9 +9,8 @@ import { Livro } from '../../models/livros';
 })
 export class LivroComponent {
   livro = input.required<Livro>();
-  protected entity: Livro = this.livro();
 
   toggleFavorite(){
-    this.entity.favorito = !this.entity.favorito;
+    this.livro().favorito = !this.livro().favorito;
   }
 }

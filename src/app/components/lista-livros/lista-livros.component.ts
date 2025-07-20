@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Genero } from '../../models/generos';
 import { Livro } from '../../models/livros';
 import { livros } from '../../../data/dummy_livros';
+import { GeneroLiterarioComponent } from "../genero-literario/genero-literario.component";
 
 @Component({
   selector: 'app-lista-livros',
-  imports: [],
+  imports: [GeneroLiterarioComponent],
   templateUrl: './lista-livros.component.html',
   styleUrl: './lista-livros.component.css'
 })
@@ -27,8 +28,8 @@ export class ListaLivrosComponent implements OnInit {
 
     this.generos = [
       {id: 'romance', value: 'Romance', livros: this.livrosGenero.get('romance') || []},
-      {id: 'aventura', value: 'Aventura', livros: this.livrosGenero.get('aventura') || []},
-      {id: 'ficcao-cientifica', value: 'Ficção Científica', livros: this.livrosGenero.get('ficcao-cientifica') || []},
+      {id: 'infantil', value: 'Infantil', livros: this.livrosGenero.get('infantil') || []},
+      {id: 'ficcao_científica', value: 'Ficção Científica', livros: this.livrosGenero.get('ficcao_científica') || []},
       {id: 'fantasia', value: 'Fantasia', livros: this.livrosGenero.get('fantasia') || []},
     ];
   }
