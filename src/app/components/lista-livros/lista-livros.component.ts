@@ -31,6 +31,7 @@ export class ListaLivrosComponent implements OnInit {
       {id: 'infantil', value: 'Infantil', livros: this.livrosGenero.get('infantil') || []},
       {id: 'ficcao_científica', value: 'Ficção Científica', livros: this.livrosGenero.get('ficcao_científica') || []},
       {id: 'fantasia', value: 'Fantasia', livros: this.livrosGenero.get('fantasia') || []},
+      {id: 'terror', value: 'Terror', livros: this.livrosGenero.get('terror') || []},
     ];
   }
 }

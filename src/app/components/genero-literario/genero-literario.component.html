@@ -5,7 +5,10 @@
     @for(livro of genero().livros; track livro) {
       <app-livro [livro]="livro"></app-livro>
     } @empty {
-      <p class="texto-prata">Nenhum livro encontrado neste gênero.</p>
+      <div class="texto-sem-livros">
+        <img src="sem-livros.png" alt="Sem livros neste gênero" />
+        <p>Não há livros neste gênero ainda</p>
+      </div>
     }
   </div>
 </section>
