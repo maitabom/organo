@@ -9,8 +9,8 @@ export const livros: Livro[] = [
       value: "Romance",
       livros: []
     },
-    imagem: "https://images-na.ssl-images-amazon.com/images/I/51rJZvVgJpL._SX331_BO1,204,203,200_.jpg",
-    favorito: true
+    imagem: "https://images.tcdn.com.br/img/img_prod/1222279/dom_casmurro_autor_machado_de_assis_ed_principis_p70_1891_1_c9c862c8884c98d5c3572694f25123c2.jpg",
+    favorito: false
   },
   {
     titulo: "O Cortiço",
@@ -20,7 +20,7 @@ export const livros: Livro[] = [
       value: "Naturalismo",
       livros: []
     },
-    imagem: "https://images-na.ssl-images-amazon.com/images/I/51yXvGvQgOL._SX346_BO1,204,203,200_.jpg",
+    imagem: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcarrefourbr.vtexassets.com%2Farquivos%2Fids%2F17538269%2FO-Cortico---Aluisio-De-Azevedo.jpg%3Fv%3D637566997105000000&f=1&nofb=1&ipt=dc5c9be2651d8ddf4a0e06dfcdabb19b442ee05ed1b5db72a109953d4aa5b585",
     favorito: false
   },
   {
@@ -31,8 +31,8 @@ export const livros: Livro[] = [
       value: "Ficção Científica",
       livros: []
     },
-    imagem: "https://images-na.ssl-images-amazon.com/images/I/71kxa1-0mfL.jpg",
-    favorito: true
+    imagem: "https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.SmmXQX9QHaZaXD8BKBSsaAHaLF%3Fpid%3DApi&f=1&ipt=9ada8163ce184047afcebccac200301306219403f7f3b67f07bbffcd3366259a",
+    favorito: false
   },
   {
     titulo: "O Pequeno Príncipe",
