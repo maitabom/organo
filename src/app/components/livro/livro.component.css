@@ -72,3 +72,32 @@ section img {
   text-align: center;
   color: var(--color-secundaria);
 }
+
+section {
+    /* código já existente omitido */
+    border-top: 24px solid; //código adicionado à section
+}
+
+.romance {
+  border-color: #82CFFA;
+}
+
+.misterio {
+  border-color: #A6D157;
+}
+
+.fantasia {
+  border-color: #E06B69;
+}
+
+.ficcao-cientifica {
+  border-color: #DB6EBF;
+}
+
+.tecnicos {
+  border-color: #FF8A29;
+}
+
+.infantil {
+  border-color: #FFB74D;
+}

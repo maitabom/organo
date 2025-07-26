@@ -1,9 +1,10 @@
 import { Component, input } from '@angular/core';
 import { Livro } from '../../models/livros';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-livro',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './livro.component.html',
   styleUrl: './livro.component.css',
 })
